@@ -1,0 +1,38 @@
+.logo{
+    display: grid;
+    grid-template: 5em auto;
+    grid-row-gap: .5em;
+    width: 16em;
+    margin: 1em 1em 1em 1em;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: white;
+    &_name{
+        color: red;
+        font-size: 1em;
+        margin: 0px;
+    }
+    &_slogan{
+        background-color: $color-primary;
+        font-size: .5em;
+        color: white;
+    }
+}
+
+.title{
+    display: grid;
+    grid-template: 10em auto;
+    grid-row-gap: 0em;
+    margin-right: 4em;
+    margin-left: 4em;
+    &>*{
+        text-transform: uppercase;
+        color: white;
+        font-style: italic;
+        font-size: 2em;
+        margin: inherit;
+    }
+    .large{
+        @extend %text-large;
+    }
+}

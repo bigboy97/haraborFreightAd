@@ -1,0 +1,42 @@
+.title .large {
+  font-size: 5em; }
+
+body {
+  margin: 0px;
+  background-color: lightblue; }
+
+.logo {
+  display: grid;
+  grid-template: 5em auto;
+  grid-row-gap: .5em;
+  width: 16em;
+  margin: 1em 1em 1em 1em;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: white; }
+  .logo_name {
+    color: red;
+    font-size: 1em;
+    margin: 0px; }
+  .logo_slogan {
+    background-color: #ED1C24;
+    font-size: .5em;
+    color: white; }
+
+.title {
+  display: grid;
+  grid-template: 10em auto;
+  grid-row-gap: 0em;
+  margin-right: 4em;
+  margin-left: 4em; }
+  .title > * {
+    text-transform: uppercase;
+    color: white;
+    font-style: italic;
+    font-size: 2em;
+    margin: inherit; }
+
+header {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center; }
