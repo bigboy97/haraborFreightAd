@@ -1,0 +1,23 @@
+{
+  "name": "hoffmancolin_harborfreightad",
+  "version": "1.0.0",
+  "description": "\"# haraborFreightAd\"",
+  "main": "index.js",
+  "scripts": {
+    "cmpil": "node-sass scss/main.scss style.css -w",
+    "server": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bigboy97/haraborFreightAd.git"
+  },
+  "author": "Colin Hoffman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bigboy97/haraborFreightAd/issues"
+  },
+  "homepage": "https://github.com/bigboy97/haraborFreightAd#readme",
+  "devDependencies": {
+    "node-sass": "^4.8.3"
+  }
+}
