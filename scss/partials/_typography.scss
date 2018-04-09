@@ -1,8 +1,13 @@
+header{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
 .logo{
     display: grid;
     grid-template: 5em auto;
     grid-row-gap: .5em;
-    width: 16em;
+    width: 25em;
     margin: 1em 1em 1em 1em;
     text-align: center;
     text-transform: uppercase;
@@ -34,5 +39,113 @@
     }
     .large{
         @extend %text-large;
+    }
+}
+
+.large--inverse{
+    @extend %text-larger;
+    @extend %text-stroke;
+}
+
+.md{
+    font-size: 4em;
+    margin: 0px;
+    font-weight: bolder;
+    
+}
+.sm{
+    font-size: .6em;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1em;
+
+    span{
+        font-style: italic;
+        text-decoration: underline;
+    }
+}
+
+.sm--larger{
+    font-size: .8em;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1em;
+}
+
+@media only screen and (max-width: 936px) {
+    .md{
+        font-size: 3em;
+        margin: 0px;
+        font-weight: bolder;
+        
+    }
+    .sm{
+        font-size: .3em;
+        font-weight: bold;
+        display: initial;
+        justify-content: initial;
+        margin-right: 1em;
+    
+        span{
+            font-style: italic;
+            text-decoration: underline;
+        }
+    }
+    
+    .sm--larger{
+        font-size: .6em;
+        font-weight: bold;
+        display: initial;
+        justify-content: initial;
+        margin-right: 1em;
+    }
+}
+
+@media only screen and (max-width: 741px) {
+    .md{
+        font-size: 6em;
+        margin: 0px;
+        font-weight: bolder;
+        
+    }
+    .sm{
+        font-size: .6em;
+        font-weight: bold;
+        display: initial;
+        justify-content: initial;
+        margin-right: 1em;
+    
+        span{
+            font-style: italic;
+            text-decoration: underline;
+        }
+    }
+    
+    .sm--larger{
+        font-size: .9em;
+        font-weight: bold;
+        display: initial;
+        justify-content: initial;
+        margin-right: 1em;
+    }
+
+    .title{
+        display: grid;
+        grid-template: 10em auto;
+        grid-row-gap: 0em;
+        margin-right: 4em;
+        margin-left: 4em;
+        &>*{
+            text-transform: uppercase;
+            color: white;
+            font-style: italic;
+            font-size: 2em;
+            margin: inherit;
+        }
+        .large{
+            font-size: 3em;
+        }
     }
 }

@@ -1,3 +1,14 @@
 %text-large{
-    font-size: 5em;
+    font-size: 10em;
+}
+%text-larger{
+    font-size: 6em;
+}
+%text-stroke{
+    color: black;
+    text-shadow:
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff;
 }
